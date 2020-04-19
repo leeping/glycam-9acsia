@@ -58,4 +58,4 @@ force constants in 9-NAc which should be inconsequential (less than 0.01%).
 ### Citation
 
 If these files have benefited your research, please support us by citing:
-<reference will be added after publication>
+(reference will be added after publication)
