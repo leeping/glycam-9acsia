@@ -10,9 +10,7 @@ conformational analysis of 9-O-acetyl sialic acid-containing GM3
 ganglioside glycan and its 9-N-acetyl mimic" submitted to Glycobiology,
 currently in revision.
 
-#=========#
-#| Files |#
-#=========#
+### Files
 
 `amber/` : Sialic acid residue template and parameter files for AMBER.
 
@@ -22,9 +20,7 @@ currently in revision.
 
 `reference/` : Original simulation input files for the publication.
 
-#================#
-#| Installation |#
-#================#
+### Installation
 
 After sourcing your AMBER environment variables, the sialic acid
 residue templates and parameter files should be installed in the
@@ -39,9 +35,7 @@ we wanted to compare the three forms of sialic acid on equal footing.
 To use the original GLYCAM parameters for "9-hydroxyl" sialic acid,
 simply do not source the leaprc.GLYCAM_06j_9acsia file.
 
-#=========#
-#| Usage |#
-#=========#
+### Usage
 
 The systems containing the custom sialic acids were built using the
 sequence command in tleap after loading the residue templates and
@@ -59,9 +53,7 @@ for the publication are provided for comparison.  The files are identical
 except for some tiny differences in the last decimal place of some angle
 force constants in 9-NAc which should be inconsequential (less than 0.01%).
 
-#============#
-#| Citation |#
-#============#
+### Citation
 
 If these files have benefited your research, please support us by citing:
 <reference will be added after publication>
