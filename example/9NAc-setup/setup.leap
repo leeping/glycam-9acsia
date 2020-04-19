@@ -1,0 +1,21 @@
+source leaprc.GLYCAM_06j_9acsia
+source leaprc.gaff
+loadamberparams AZI.frcmod
+loadamberprep AZI.prep
+
+# Replace this with your sequence of interest
+m = sequence { AZI 4GB 3LB 9SN }
+
+# Save pdb and mol2 files for later viewing
+savepdb m solute.pdb
+savemol2 m solute-atype.mol2 1
+savemol2 m solute-elem.mol2 0
+
+solvateoct m TIP3PBOX 8.0 iso
+addIons2 m Na+ 0
+check m
+charge m
+savepdb m system.pdb
+saveamberparm m prmtop inpcrd
+quit
+

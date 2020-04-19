@@ -1,0 +1,207 @@
+log started: Sun Apr 19 08:18:31 2020
+
+Log file: ./leap.log
+>> #
+>> # ----- leaprc for loading the general Amber Force field.
+>> #       This file is mostly for use with Antechamber
+>> #
+>> #	load atom type hybridizations
+>> #
+>> addAtomTypes {
+>> 	{ "h1"  "H" "sp3" }
+>> 	{ "h2"  "H" "sp3" }
+>> 	{ "h3"  "H" "sp3" }
+>> 	{ "h4"  "H" "sp3" }
+>> 	{ "h5"  "H" "sp3" }
+>> 	{ "ha"  "H" "sp3" }
+>> 	{ "hc"  "H" "sp3" }
+>> 	{ "hn"  "H" "sp3" }
+>> 	{ "ho"  "H" "sp3" }
+>> 	{ "hp"  "H" "sp3" }
+>> 	{ "hs"  "H" "sp3" }
+>> 	{ "hw"  "H" "sp3" }
+>> 	{ "hx"  "H" "sp3" }
+>> 	{ "o"  "O" "sp2" }
+>> 	{ "o2"  "O" "sp2" }
+>> 	{ "oh"  "O" "sp3" }
+>> 	{ "os"  "O" "sp3" }
+>> 	{ "ow"  "O" "sp3" }
+>> 	{ "c"  "C" "sp2" }
+>> 	{ "c1"  "C" "sp2" }
+>> 	{ "c2"  "C" "sp2" }
+>> 	{ "c3"  "C" "sp3" }
+>> 	{ "ca"  "C" "sp2" }
+>> 	{ "cc"  "C" "sp2" }
+>> 	{ "cd"  "C" "sp2" }
+>> 	{ "ce"  "C" "sp2" }
+>> 	{ "cf"  "C" "sp2" }
+>> 	{ "cg"  "C" "sp2" }
+>> 	{ "ch"  "C" "sp2" }
+>> 	{ "cp"  "C" "sp2" }
+>> 	{ "cq"  "C" "sp2" }
+>> 	{ "cu"  "C" "sp2" }
+>> 	{ "cv"  "C" "sp2" }
+>> 	{ "cx"  "C" "sp2" }
+>> 	{ "cy"  "C" "sp2" }
+>> 	{ "cz"  "C" "sp2" }
+>> 	{ "n"   "N" "sp2" }
+>> 	{ "n1"  "N" "sp2" }
+>> 	{ "n2"  "N" "sp2" }
+>> 	{ "n3"  "N" "sp3" }
+>> 	{ "n4"  "N" "sp3" }
+>> 	{ "na"  "N" "sp2" }
+>> 	{ "nb"  "N" "sp2" }
+>> 	{ "nc"  "N" "sp2" }
+>> 	{ "nd"  "N" "sp2" }
+>> 	{ "ne"  "N" "sp2" }
+>> 	{ "nf"  "N" "sp2" }
+>> 	{ "nh"  "N" "sp2" }
+>> 	{ "no"  "N" "sp2" }
+>> 	{ "s"   "S" "sp2" }
+>> 	{ "s2"   "S" "sp2" }
+>> 	{ "s3"   "S" "sp3" }
+>> 	{ "s4"   "S" "sp3" }
+>> 	{ "s6"   "S" "sp3" }
+>> 	{ "sh"   "S" "sp3" }
+>> 	{ "ss"   "S" "sp3" }
+>> 	{ "sx"   "S" "sp3" }
+>> 	{ "sy"   "S" "sp3" }
+>> 	{ "p2"   "P" "sp2" }
+>> 	{ "p3"   "P" "sp3" }
+>> 	{ "p4"   "P" "sp3" }
+>> 	{ "p5"   "P" "sp3" }
+>> 	{ "pb"   "P" "sp3" }
+>> 	{ "pc"   "P" "sp3" }
+>> 	{ "pd"   "P" "sp3" }
+>> 	{ "pe"   "P" "sp3" }
+>> 	{ "pf"   "P" "sp3" }
+>> 	{ "px"   "P" "sp3" }
+>> 	{ "py"   "P" "sp3" }
+>> 	{ "f"   "F" "sp3" }
+>> 	{ "cl"  "Cl" "sp3" }
+>> 	{ "br"  "Br" "sp3" }
+>> 	{ "i"   "I"  "sp3" }
+>> }
+>> #
+>> #	Load the general force field parameter set.
+>> #
+>> gaff = loadamberparams gaff.dat
+Loading parameters: /home/leeping/opt/amber/tip/dat/leap/parm/gaff.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 1.81, May 2017)
+(UNKNOWN ATOM TYPE: op)
+(UNKNOWN ATOM TYPE: oq)
+(UNKNOWN ATOM TYPE: ni)
+(UNKNOWN ATOM TYPE: nj)
+(UNKNOWN ATOM TYPE: np)
+(UNKNOWN ATOM TYPE: nq)
+(UNKNOWN ATOM TYPE: nk)
+(UNKNOWN ATOM TYPE: nl)
+(UNKNOWN ATOM TYPE: nm)
+(UNKNOWN ATOM TYPE: nn)
+(UNKNOWN ATOM TYPE: sp)
+(UNKNOWN ATOM TYPE: sq)
+> 
+> loadamberparams AZI.frcmod
+Loading parameters: ./AZI.frcmod
+Reading force field modification type file (frcmod)
+Reading title:
+remark goes here
+> loadamberprep AZI.prep
+Loading Prep file: ./AZI.prep
+Loaded UNIT: AZI
+> 
+> # Replace this with your sequence of interest
+> m = sequence { AZI 4GB 3LB 9SN }
+Sequence: AZI
+Sequence: 4GB
+Sequence: 3LB
+Sequence: 9SN
+> 
+> # Save pdb and mol2 files for later viewing
+> savepdb m solute.pdb
+Writing pdb file: solute.pdb
+> savemol2 m solute-atype.mol2 1
+Writing mol2 file: solute-atype.mol2
+> savemol2 m solute-elem.mol2 0
+Writing mol2 file: solute-elem.mol2
+> 
+> solvateoct m TIP3PBOX 8.0 iso
+Scaling up box by a factor of 1.299033 to meet diagonal cut criterion
+  Solute vdw bounding box:              13.561 8.881 24.089
+  Total bounding box for atom centers:  44.874 44.874 44.874
+      (box expansion for 'iso' is  97.6%)
+  Solvent unit box:                     18.774 18.774 18.774
+The number of boxes:  x= 3  y= 3  z= 3
+  Volume: 48268.388 A^3 (oct)
+  Total mass 24255.562 amu,  Density 0.834 g/cc
+  Added 1304 residues.
+> addIons2 m Na+ 0
+1 Na+ ion required to neutralize.
+Adding 1 counter ions to "m" using 1A grid
+Total solute charge:  -1.00  Max atom radius:   1.91
+Grid extends from solute vdw + 1.37  to  7.28
+Box:
+   enclosing:  -26.75 -29.04 -30.16   26.58 29.79 30.73
+   sized:			      37.25 34.96 33.84
+   edge:        64.00
+Resolution:      1.00 Angstrom.
+Tree depth: 6
+Volume = 17.01% of box, grid points 44582
+Calculating grid charges
+Placed Na+ in m at (-19.75, 0.96, 12.84).
+
+Done adding ions.
+> check m
+Checking 'm'....
+
+/home/leeping/opt/amber/tip/bin/teLeap: Warning!
+Close contact of 0.979632 angstroms between .R<4GB 2>.A<H3O 16> and .R<3LB 3>.A<H6O 10>
+
+/home/leeping/opt/amber/tip/bin/teLeap: Warning!
+Close contact of 1.292241 angstroms between .R<4GB 2>.A<H62 7> and .R<9SN 4>.A<H91 38>
+
+/home/leeping/opt/amber/tip/bin/teLeap: Warning!
+Close contact of 0.473437 angstroms between .R<3LB 3>.A<H2O 20> and .R<9SN 4>.A<H8 29>
+
+/home/leeping/opt/amber/tip/bin/teLeap: Warning!
+Close contact of 1.475315 angstroms between .R<3LB 3>.A<H2O 20> and .R<9SN 4>.A<C8 28>
+
+/home/leeping/opt/amber/tip/bin/teLeap: Warning!
+Close contact of 1.391585 angstroms between .R<3LB 3>.A<O2 19> and .R<9SN 4>.A<H8 29>
+Checking parameters for unit 'm'.
+Checking for bond parameters.
+Checking for angle parameters.
+check:  Warnings: 5
+Unit is OK.
+> charge m
+Total unperturbed charge:   0.000000
+Total perturbed charge:     0.000000
+> savepdb m system.pdb
+Writing pdb file: system.pdb
+   printing CRYST1 record to PDB file with box info
+> saveamberparm m prmtop inpcrd
+Checking Unit.
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ total 5 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	WAT	1304
+  )
+ (no restraints)
+> quit
+	Quit
+
+Exiting LEaP: Errors = 0; Warnings = 5; Notes = 0.

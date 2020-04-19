@@ -1,0 +1,47 @@
+remark goes here
+MASS
+
+BOND
+Cg-os  285.0    1.460          Copy of Cg-Os
+
+ANGLE
+c3-os-Cg     50.00    111.60   Copy of CT-Os-Cg
+H2-Cg-os     60.00    110.00   Copy of H2-Cg-Os
+os-Cg-Os    100.00    112.00   Copy of Os-Cg-Os
+os-Cg-Cg     70.00    108.50   Copy of Os-Cg-Cg
+
+DIHE
+H2-Cg-os-c3   1    0.60          0.0            -2.         SCEE=1.0 SCNB=1.0 Copy of H2-Cg-Os-CT
+              1    0.10          0.0             3.         SCEE=1.0 SCNB=1.0
+c3-os-Cg-Os   1    0.142         0.0            -3.         SCEE=1.0 SCNB=1.0 # ForceBalance 2018-11-11
+              1   -1.465       180.0            -2.         SCEE=1.0 SCNB=1.0 # ForceBalance 2018-11-11
+              1    0.532       180.0             1.         SCEE=1.0 SCNB=1.0 # ForceBalance 2018-11-11
+c3-os-Cg-Cg   1    0.514         0.0            -3.         SCEE=1.0 SCNB=1.0 # ForceBalance 2018-11-11
+              1   -0.191       180.0            -2.         SCEE=1.0 SCNB=1.0 # ForceBalance 2018-11-11
+              1    0.941       180.0             1.         SCEE=1.0 SCNB=1.0 # ForceBalance 2018-11-11
+c3-c3-os-Cg   1   -0.122         0.0            -3.         SCEE=1.0 SCNB=1.0 # ForceBalance 2018-11-11
+              1    0.198       180.0            -2.         SCEE=1.0 SCNB=1.0 # ForceBalance 2018-11-11
+              1   -1.089         0.0             1.         SCEE=1.0 SCNB=1.0 # ForceBalance 2018-11-11
+os-c3-c3-c3   1    0.246         0.0            -3.         SCEE=1.0 SCNB=1.0 # ForceBalance 2018-11-11
+              1   -0.169         0.0            -2.         SCEE=1.0 SCNB=1.0 # ForceBalance 2018-11-11
+              1   -0.246         0.0             1.         SCEE=1.0 SCNB=1.0 # ForceBalance 2018-11-11
+n2-c3-c3-c3   1   -0.191         0.0            -3.         SCEE=1.0 SCNB=1.0 # ForceBalance 2018-11-11
+              1   -0.332         0.0            -2.         SCEE=1.0 SCNB=1.0 # ForceBalance 2018-11-11
+              1   -0.664         0.0             1.         SCEE=1.0 SCNB=1.0 # ForceBalance 2018-11-11
+n1-n2-c3-c3   1    0.068         0.0            -3.         SCEE=1.0 SCNB=1.0 # ForceBalance 2018-11-11
+              1   -0.638         0.0            -2.         SCEE=1.0 SCNB=1.0 # ForceBalance 2018-11-11
+              1   -2.026         0.0             1.         SCEE=1.0 SCNB=1.0 # ForceBalance 2018-11-11
+os-Cg-Os-Cg   1    0.96          0.0            -3.         SCEE=1.0 SCNB=1.0   Copy of Os-Cg-Os-Cg
+              1    1.38          0.0            -2.         SCEE=1.0 SCNB=1.0
+              1    1.08          0.0             1.         SCEE=1.0 SCNB=1.0
+os-Cg-Cg-Cg   1   -0.27          0.0             1.         SCEE=1.0 SCNB=1.0   Copy of Os-Cg-Cg-Cg
+H1-Cg-Cg-os   1    0.05          0.0             3.         SCEE=1.0 SCNB=1.0   Copy of H1-Cg-Cg-Os
+Oh-Cg-Cg-os   1   -1.10          0.0            -1.         SCEE=1.0 SCNB=1.0   Copy of Oh-Cg-Cg-Os
+              1    0.25          0.0             2.         SCEE=1.0 SCNB=1.0
+
+IMPROPER
+
+NONBON
+
+
+

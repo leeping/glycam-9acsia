@@ -1,0 +1,179 @@
+Atom types and torsion parameters for acetylated Sias
+MASS
+C7 14.01 C7 in sialic acid glycerol chain
+C8 14.01 C8 in sialic acid glycerol chain
+C9 14.01 C9 in sialic acid glycerol chain
+Nh 14.01 N-acetyl nitrogen
+Ot 16.00 O-acetyl oxygen
+
+BOND
+C7-C8  310.0    1.520       Butane (gauche, and trans)
+C7-Cg  310.0    1.520       Butane (gauche, and trans)
+C7-H1  340.0    1.090       Parm94
+C8-C9  310.0    1.520       Butane (gauche, and trans)
+C8-H1  340.0    1.090       Parm94
+C9-H1  340.0    1.090       Parm94
+C9-Oh  320.0    1.430       Methanol
+C7-Oh  320.0    1.430       Methanol
+C8-Oh  320.0    1.430       Methanol
+C -Nh  490.0    1.335       Parm94
+H -Nh  434.0    1.010       Parm94
+C -Ot  450.0    1.323       Parm99
+C9-Nh  337.0    1.450       N-Methylethanamide
+C9-Ot  285.0    1.460       Parm94   K calculated from methyl sulphate (eqm value from THEOCHEM 395/396 (1997) 107-122)
+
+ANGLE
+C7-C8-C9     45.00    113.50   Propane
+C7-Cg-Oy     70.00    108.50   Methoxyethane (Ethylmethyl ether) - for sialic acid only
+H1-C9-H1     45.00    109.50   Methanol, Propanol
+C9-C8-H1     45.00    111.00   Propanol
+C8-C9-H1     45.00    111.00   Propanol
+C8-C7-Cg     45.00    113.50   Propane
+C8-C7-H1     45.00    111.00   Propanol
+C7-Cg-H1     45.00    111.00   Propanol
+C7-Cg-Cg     45.00    113.50   Propane
+C7-C8-H1     45.00    111.00   Propanol
+Cg-C7-H1     45.00    111.00   Propanol
+Cg-C -Nh     70.00    115.60   Force constant taken from Parm94, Angle set to HF/6-31G(d) value N-Methylethanamide
+H1-C7-Oh     60.00    110.00   Methanol (best fit for trans and gauche hyrdogens)
+O -C -Ot     80.0     125.00   Parm99
+C -Nh-H      50.00    120.00   Parm99
+H1-C9-Oh     60.00    110.00   Methanol (best fit for trans and gauche hyrdogens)
+Cg-C -Ot     95.0     110.80   K calculated from methyl acetate (eqm value from crystal average)
+H1-C8-Oh     60.00    110.00   Methanol (best fit for trans and gauche hyrdogens)
+C9-C8-Oh     70.00    107.50   Ethanol
+Cg-C7-Oh     70.00    107.50   Ethanol
+C9-Oh-Ho     55.00    109.50   Methanol
+C8-Oh-Ho     55.00    109.50   Methanol
+C8-C9-Oh     70.00    107.50   Ethanol
+C8-C7-Oh     70.00    107.50   Ethanol
+C7-Oh-Ho     55.00    109.50   Methanol
+C7-C8-Oh     70.00    107.50   Ethanol
+Nh-C -O      80.00    122.90   Parm94
+H1-C9-Ot     60.00    110.00   Methoxymethane (Dimethyl ether) - best fit for trans and gauche hyrdogens
+C8-C9-Ot     70.00    108.50   Methoxyethane (Ethylmethyl ether)
+C -Ot-C9     60.0     117.00   K calculated from methyl acetate (eqm value from crystal average)
+H1-C9-Nh     50.00    109.50   Parm94 H-Cg-N
+C9-Nh-H      30.00    118.00   N-Methylethanamide
+C8-C9-Nh     80.00    109.70   Parm91
+C -Nh-C9     50.00    120.00   Force constant taken from Parm94 - modified the angle by 2.9 degrees
+
+DIHE
+C7-C8-C9-H1   1    0.15          0.0             3.         SCEE=1.0 SCNB=1.0 2,2-Dimethylbutanol
+H1-C7-C8-C9   1    0.15          0.0             3.         SCEE=1.0 SCNB=1.0 2,2-Dimethylbutanol
+Cg-C7-C8-H1   1    0.15          0.0             3.         SCEE=1.0 SCNB=1.0 2,2-Dimethylbutanol
+H1-C7-Cg-Cg   1    0.15          0.0             3.         SCEE=1.0 SCNB=1.0 2,2-Dimethylbutanol
+H1-C7-Cg-H1   1    0.17          0.0             3.         SCEE=1.0 SCNB=1.0 Ethanol
+H1-C7-Cg-Oy   1    0.05          0.0             3.         SCEE=1.0 SCNB=1.0 COPY OF H1-Cg-Cg-Os NOT DERIVED
+C8-C7-Cg-Oy   1   -0.27          0.0             1.         SCEE=1.0 SCNB=1.0 1-methoxypropane - sialic acid only
+C8-C7-Cg-H1   1    0.15          0.0             3.         SCEE=1.0 SCNB=1.0 2,2-Dimethylbutanol
+C7-Cg-Oy-Cy   1    0.16          0.0             3.         SCEE=1.0 SCNB=1.0 Methoxyethane, 2-methoxypropane - for sialic acid only!
+C7-Cg-Cg-Ng   1    0.40          0.0             1.         SCEE=1.0 SCNB=1.0 N-(1,1,2,2-tetramethyl-propyl)-ethanamide, N-propyl-ethanamide
+C7-Cg-Cg-H1   1    0.15          0.0             3.         SCEE=1.0 SCNB=1.0 2,2-Dimethylbutanol
+C7-Cg-Cg-Cg   1    0.45          0.0             1.         SCEE=1.0 SCNB=1.0 Butane
+H1-C8-C9-H1   1    0.17          0.0             3.         SCEE=1.0 SCNB=1.0 Ethanol
+H1-C7-C8-H1   1    0.17          0.0             3.         SCEE=1.0 SCNB=1.0 Ethanol
+Oh-C7-C8-H1   1    0.05          0.0             3.         SCEE=1.0 SCNB=1.0 tert-butanol
+Oh-C8-C9-H1   1    0.05          0.0             3.         SCEE=1.0 SCNB=1.0 tert-butanol
+Oh-C7-Cg-H1   1    0.05          0.0             3.         SCEE=1.0 SCNB=1.0 tert-butanol
+Oh-C7-Cg-Oy   1   -1.10          0.0            -1.         SCEE=1.0 SCNB=1.0 Ether-Alcohols - sialic acid only
+              1    0.25          0.0             2.         SCEE=1.0 SCNB=1.0
+H1-C8-Oh-Ho   1    0.18          0.0             3.         SCEE=1.0 SCNB=1.0 Methanol
+Cg-C -Nh-H    1    0.00          0.0             1.         SCEE=1.0 SCNB=1.0 Ethanamide and N-Methylethanamide
+Nh-C -Cg-Hc   1    0.00          0.0             3.         SCEE=1.0 SCNB=1.0 Ethanamide
+O -C -Nh-H    1    2.50        180.0            -2.         SCEE=1.2 SCNB=2.0 Copy of Parm99 JCC,7,(1986),230 J.C.cistrans-NMA DE
+              1    2.00          0.0             1.         SCEE=1.2 SCNB=2.0
+Ot-C -Cg-Hc   1    0.0           0.0             3          SCEE=1.0 SCNB=1.0 Methyl acetate
+H1-C9-Oh-Ho   1    0.18          0.0             3.         SCEE=1.0 SCNB=1.0 Methanol
+H1-C8-C9-Oh   1    0.05          0.0             3.         SCEE=1.0 SCNB=1.0 tert-butanol
+C9-C8-Oh-Ho   1    0.18          0.0             3.         SCEE=1.0 SCNB=1.0 Ethanol, propan-2-ol (Isopropanol)
+C8-C7-Oh-Ho   1    0.18          0.0             3.         SCEE=1.0 SCNB=1.0 Ethanol, propan-2-ol (Isopropanol)
+H1-C7-Oh-Ho   1    0.18          0.0             3.         SCEE=1.0 SCNB=1.0 Methanol
+C8-C9-Oh-Ho   1    0.18          0.0             3.         SCEE=1.0 SCNB=1.0 Ethanol, propan-2-ol (Isopropanol)
+C7-C8-Oh-Ho   1    0.18          0.0             3.         SCEE=1.0 SCNB=1.0 Ethanol, propan-2-ol (Isopropanol)
+Cg-C7-Oh-Ho   1    0.18          0.0             3.         SCEE=1.0 SCNB=1.0 Ethanol, propan-2-ol (Isopropanol)
+H1-C7-C8-Oh   1    0.05          0.0             3.         SCEE=1.0 SCNB=1.0 tert-butanol
+O -C -Ot-C9   1    0.0           0.0            -3          SCEE=1.0 SCNB=1.0 Cyclohexyl acetate (axial and equatorial)
+              1   -2.90          0.0            -2          SCEE=1.0 SCNB=1.0
+              1    0.60          0.0             1          SCEE=1.0 SCNB=1.0
+H1-C9-Ot-C    1    0.0           0.0             3          SCEE=1.0 SCNB=1.0 Methyl acetate
+H1-C8-C9-Ot   1    0.05          0.0             3.         SCEE=1.0 SCNB=1.0 Methoxyethane
+C8-C9-Nh-C    1    0.00          0.0             3.         SCEE=1.0 SCNB=1.0 N-tert-butylethanamide, N-Isopropylethanamide
+C8-C9-Nh-H    1    0.10          0.0             3.         SCEE=1.0 SCNB=1.0 N-tert-butylethanamide, N-Isopropylethanamide
+Cg-C -Nh-C9   1   -2.70          0.0             2.         SCEE=1.0 SCNB=1.0 N-Methylethanamide, N-tertbutylethanamide
+H1-C8-C9-Nh   1    0.10          0.0             3.         SCEE=1.0 SCNB=1.0 N-tert-butylethanamide
+H1-C9-Nh-C    1   -1.00          0.0             1.         SCEE=1.0 SCNB=1.0 N,N-Dimethylethanamide, N-Isopropylethanamide
+H1-C9-Nh-H    1    1.00          0.0             1.         SCEE=1.0 SCNB=1.0 N-Isopropylethanamide Coupled to H1-Cg-N-C
+O -C -Nh-C9   1   -2.80          0.0             2.         SCEE=1.0 SCNB=1.0 N-Methylethanamide, N-tert-butylethanamide
+Cg-C -Ot-C9   1    0.0           0.0            -3          SCEE=1.0 SCNB=1.0 Cyclohexyl acetate (axial and equatorial)
+              1   -2.90          0.0            -2          SCEE=1.0 SCNB=1.0
+              1   -0.60          0.0             1          SCEE=1.0 SCNB=1.0
+C8-C9-Ot-C    1   -0.01          0.0            -3          SCEE=1.0 SCNB=1.0 Ethyl acetate, 2-Methoxy 3-O-Acetyl THP
+              1    0.04          0.0            -2          SCEE=1.0 SCNB=1.0
+              1    0.12          0.0             1          SCEE=1.0 SCNB=1.0
+Cg-C7-C8-C9   1   -0.10          0.0            -1.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+              1   -0.60          0.0            -2.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+              1    0.21          0.0             3.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+C8-C7-Cg-Cg   1   -0.10          0.0            -1.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+              1    0.63          0.0            -2.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+              1   -1.57          0.0             3.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+Oh-C7-Cg-Cg   1    1.09          0.0            -1.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+              1   -0.51          0.0            -2.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+              1    0.77          0.0             3.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+Oh-C7-C8-C9   1    1.21          0.0            -1.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+              1    0.75          0.0            -2.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+              1    0.65          0.0             3.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+Cg-C7-C8-Oh   1   -0.74          0.0            -1.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+              1   -0.15          0.0            -2.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+              1   -0.39          0.0             3.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+Oh-C7-C8-Oh   1   -1.66          0.0            -1.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+              1    0.26          0.0            -2.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+              1    0.16          0.0             3.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+C7-C8-C9-Oh   1   -0.39          0.0            -1.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+              1    0.12          0.0            -2.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+              1    0.04          0.0             3.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+C7-C8-C9-Nh   1   -0.84          0.0            -1.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+              1    0.37          0.0            -2.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+              1    0.34          0.0             3.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+C7-C8-C9-Ot   1   -0.50          0.0            -1.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+              1   -0.24          0.0            -2.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+              1   -0.59          0.0             3.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+Oh-C8-C9-Oh   1   -2.69          0.0            -1.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+              1    0.03          0.0            -2.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+              1   -0.01          0.0             3.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+Oh-C8-C9-Ot   1   -2.77          0.0            -1.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+              1   -0.03          0.0            -2.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+              1    0.61          0.0             3.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+Oh-C8-C9-Nh   1   -2.67          0.0            -1.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+              1   -0.54          0.0            -2.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+              1    0.89          0.0             3.         SCEE=1.0 SCNB=1.0 ForceBalance 2018-11-09
+
+IMPROPER
+Cg-Ot-C -O          10.5         180.          2.
+C9-Ot-C -O          10.5         180.          2.
+Cg-Nh-C -O          10.5         180.          2.
+C9-Nh-C -O          10.5         180.          2.
+Ot-Ng-C -O          10.5         180.          2.
+Os-Nh-C -O          10.5         180.          2.
+Ot-Nh-C -O          10.5         180.          2.
+Nh-H2-C -O          10.5         180.          2.
+C7-H1-C -O          10.5         180.          2.
+C8-H1-C -O          10.5         180.          2.
+C9-H1-C -O          10.5         180.          2.
+Ot-H2-C -O          10.5         180.          2.
+C -H -Nh-Cg          1.5         180.          2.
+H -H -Nh-Cg          1.5         180.          2.
+C -H -Nh-C9          1.5         180.          2.
+H -H -Nh-C9          1.5         180.          2.
+S -Cg-Nh-H           5.5         180.          2.
+S -C9-Nh-H           5.5         180.          2.
+S -H -Nh-H           5.5         180.          2.
+Cg-S -Nh-H           5.5         180.          2.
+C9-S -Nh-H           5.5         180.          2.
+
+NONB
+  C7          1.9080  0.1094
+  C8          1.9080  0.1094
+  C9          1.9080  0.1094
+  Nh          1.8240  0.1700
+  Ot          1.6837  0.1700
