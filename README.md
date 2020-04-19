@@ -1,7 +1,7 @@
 ### Readme
 
 This repository contains force field parameters for simulating
-9-O-acetyl, 9-N-acetyl and 9-hydroxyl sialic acid residues, with
+9-O-acetyl, 9-N-acetyl and 9-hydroxyl sialic acid residues in AMBER, with
 torsion parameters fitted to wB97X-D3/6-31++g(2d,2p) level of theory
 using the TorsionDrive/ForceBalance software packages.  It also
 includes parameters for a propyl azide residue as part of the
